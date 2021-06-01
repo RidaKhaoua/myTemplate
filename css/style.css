@@ -167,6 +167,7 @@ header .container nav ul li a:hover {
   caret-color: white;
   border: 1px solid white;
   border-right: none;
+  width:100%
 }
 
 .landing .content form input[type="search"]::placeholder {
