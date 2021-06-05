@@ -122,7 +122,7 @@ header .container nav i {
 
 .a-display {
   display: block;
-  color: white !important;
+  color: white;
 }
 /* header .container nav i:hover + ul {
   display: flex;
@@ -143,6 +143,9 @@ header .container nav i {
   color: white !important;
   display: block;
 }
+.link {
+  color: black;
+}
 @media (max-width: 994px) {
   header .container nav ul {
     display: none;
@@ -159,7 +162,6 @@ header .container nav ul li a {
   text-decoration: none;
   padding: 18px;
   text-transform: uppercase;
-  color: black;
   transition: background-color 0.5s linear;
 }
 

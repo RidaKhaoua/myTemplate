@@ -24,12 +24,13 @@ function toggle() {
     nav.classList.add("show-toggle-menu");
     for (let i = 0; i < nav.childElementCount; i++) {
       nav.children[i].classList.add("li-margin");
+      nav.children[i].children[0].classList.remove("link");
       nav.children[i].children[0].classList.add("a-display");
     }
   } else {
     nav.classList.add("hidden-togle-menu");
     setTimeout(() => {
       nav.classList.remove("toggle");
-    }, 3000);
+    }, 1003);
   }
 }
