@@ -1,7 +1,20 @@
 let menuTogle = document.querySelector(".Menu-toggle");
 let nav = document.querySelector(".nav-bar > ul");
-console.log(nav);
-console.log(menuTogle);
+let imagesDescr = document.querySelector(".content > .images");
+console.log(imagesDescr.children);
+
+window.addEventListener("scroll", () => {
+  console.log(Math.floor(window.scrollY));
+  if (Math.floor(window.scrollY) >= 420) {
+    // for (let i = 0; i < imagesDescr.childElementCount; i++) {
+    //   imagesDescr.children[i].classList.add("animated-img");
+    // }
+    imagesDescr.classList.add("animated-img");
+  } else {
+    imagesDescr.classList.remove("animated-img");
+  }
+});
+
 menuTogle.addEventListener("click", toggle);
 
 function toggle() {

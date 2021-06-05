@@ -97,13 +97,12 @@ header .container nav i {
   }
   100% {
     transform-origin: top;
-
     transform: scaleY(1);
   }
 }
 .hidden-togle-menu {
   animation-name: hiddentoggle-menu;
-  animation-duration: 3s;
+  animation-duration: 1s;
   animation-timing-function: linear;
 }
 @keyframes hiddentoggle-menu {
@@ -272,10 +271,29 @@ header .container nav ul li a:hover {
   grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
   align-content: center;
   gap: 10px;
+  transition: 1s linear;
 }
 
 .description .content .images img {
   max-width: 100%;
+}
+.animated-img {
+  animation-name: animated-img;
+  animation-duration: 2s;
+  animation-timing-function: linear;
+  /* opacity: 1 !important; */
+}
+
+@keyframes animated-img {
+  0% {
+    opacity: 0;
+  }
+  75% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 
 .description .content .text {
