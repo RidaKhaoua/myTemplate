@@ -5,6 +5,7 @@
 * {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
+  box-sizing: border-box;
   margin: 0;
   list-style: none;
 }
@@ -67,13 +68,14 @@ header .container nav {
 header .container nav ul {
   display: flex;
   justify-content: space-between;
+  transition: 1s linear;
 }
+
 header .container nav i {
   font-size: 28px;
 }
-
-header .container nav i:hover + ul {
-  display: flex;
+.toggle {
+  display: flex !important;
   flex-direction: column;
   position: absolute;
   z-index: 2;
@@ -83,12 +85,63 @@ header .container nav i:hover + ul {
   width: 100%;
   background-color: rgb(0 0 0/70%);
 }
-header .container nav i:hover + ul li {
+.show-toggle-menu {
+  animation-name: show-toggle-menu;
+  animation-duration: 3s;
+  animation-timing-function: linear;
+}
+@keyframes show-toggle-menu {
+  0% {
+    transform: scaleY(0);
+    transform-origin: top;
+  }
+  100% {
+    transform-origin: top;
+
+    transform: scaleY(1);
+  }
+}
+.hidden-togle-menu {
+  animation-name: hiddentoggle-menu;
+  animation-duration: 3s;
+  animation-timing-function: linear;
+}
+@keyframes hiddentoggle-menu {
+  0% {
+    transform: scaleY(1);
+    transform-origin: top;
+  }
+  100% {
+    transform-origin: top;
+    transform: scaleY(0);
+  }
+}
+
+.li-margin {
   margin: 15px 0px;
 }
 
-header .container nav i:hover + ul li a {
-  color: white;
+.a-display {
+  display: block;
+  color: white !important;
+}
+/* header .container nav i:hover + ul {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  z-index: 2;
+  top: 100%;
+  left: 0;
+  padding: 0;
+  width: 100%;
+  background-color: rgb(0 0 0/70%);
+} */
+/* header .container nav i:hover + ul li {
+  margin: 15px 0px;
+} */
+
+.styling-link {
+  color: white !important;
   display: block;
 }
 @media (max-width: 994px) {
@@ -167,7 +220,7 @@ header .container nav ul li a:hover {
   caret-color: white;
   border: 1px solid white;
   border-right: none;
-  width:100%
+  width: 100%;
 }
 
 .landing .content form input[type="search"]::placeholder {
