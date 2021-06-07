@@ -536,3 +536,116 @@ header .container nav ul li a:hover {
 }
 
 /* End statistique */
+
+/* Start sing-up */
+.sing-up {
+  padding-top: var(--section-pading);
+  padding-bottom: var(--section-pading);
+  background-color: #2e3740;
+  margin-top: 30px;
+}
+
+.sing-up .container .content {
+  width: 500px;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 100%;
+  background-color: white;
+  padding: 20px;
+}
+
+.sing-up .container .content form {
+  width: 420px;
+  height: 227px;
+  /* border: 1px solid; */
+  margin-left: auto;
+  margin-right: auto;
+  padding: 30px 0px;
+  max-width: 100%;
+  margin-bottom: 50px;
+}
+
+.sing-up .container .content h2 {
+  text-align: center;
+  margin-bottom: 30px;
+  font-size: 30px;
+
+  text-transform: capitalize;
+  font-weight: 400;
+}
+
+.sing-up .container .content form label {
+  color: #777;
+}
+
+.sing-up .container .content form input:not([type="submit"]) {
+  width: 100%;
+  padding: 2px 0px;
+  background-color: transparent;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-bottom: 1px solid black;
+  outline: 0;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 30px;
+}
+
+.sing-up .container .content form input[type="submit"] {
+  padding: 10px 0px;
+  border: none;
+  outline: 0;
+  cursor: pointer;
+  text-transform: capitalize;
+  font-weight: 700;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #2ea1ff;
+  color: white;
+}
+
+.sing-up .container .content .register {
+  text-align: center;
+  margin-bottom: 20px;
+}
+.sing-up .container .register a {
+  text-decoration: none;
+  text-transform: capitalize;
+}
+.sing-up .container .content .social-media {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.sing-up .content .social-media i {
+  width: 40px;
+  height: 40px;
+  background-color: red;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  margin-right: 20px;
+  cursor: pointer;
+}
+
+.sing-up .content .social-media i:first-child {
+  background-color: #0b84ed;
+  color: white;
+}
+
+.sing-up .content .social-media i:nth-child(2) {
+  background-color: #fafafa;
+  color: #ea4335;
+}
+
+.sing-up .content .social-media i:nth-child(3) {
+  background-color: #1da1f2;
+  color: white;
+}
+
+/* end sing-up */
