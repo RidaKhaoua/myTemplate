@@ -36,28 +36,28 @@ window.addEventListener("scroll", () => {
           imagesDescr.children[i].classList.add("animated-img");
           setTimeout(() => {
             imagesDescr.children[i].style.opacity = "1";
-          }, 1000);
+          }, 500);
           break;
         case 1:
+          imagesDescr.children[i].classList.add("animated-img");
+          imagesDescr.children[i].style.animationDelay = "0.5s";
+          setTimeout(() => {
+            imagesDescr.children[i].style.opacity = "1";
+          }, 700);
+          break;
+        case 2:
+          imagesDescr.children[i].classList.add("animated-img");
+          imagesDescr.children[i].style.animationDelay = "1.5s";
+          setTimeout(() => {
+            imagesDescr.children[i].style.opacity = "1";
+          }, 1700);
+          break;
+        case 3:
           imagesDescr.children[i].classList.add("animated-img");
           imagesDescr.children[i].style.animationDelay = "2s";
           setTimeout(() => {
             imagesDescr.children[i].style.opacity = "1";
-          }, 2000);
-          break;
-        case 2:
-          imagesDescr.children[i].classList.add("animated-img");
-          imagesDescr.children[i].style.animationDelay = "4s";
-          setTimeout(() => {
-            imagesDescr.children[i].style.opacity = "1";
-          }, 4000);
-          break;
-        case 3:
-          imagesDescr.children[i].classList.add("animated-img");
-          imagesDescr.children[i].style.animationDelay = "6s";
-          setTimeout(() => {
-            imagesDescr.children[i].style.opacity = "1";
-          }, 6000);
+          }, 2200);
 
           break;
 
